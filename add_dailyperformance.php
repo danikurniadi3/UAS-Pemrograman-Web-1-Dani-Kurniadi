@@ -65,7 +65,7 @@
             <!-- /.card-body -->
             <div class="card-footer">
               <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="button" onClick="window.location.href='karyawan.php';" class="btn btn-primary">Back</button>
+              <button type="button" onClick="window.location.href='dailyperformance.php';" class="btn btn-primary">Back</button>
             </div>
         </form>
 
@@ -122,23 +122,6 @@
           $('#timepicker').datetimepicker({
             format: 'LT'
           })
-
-          //Bootstrap Duallistbox
-          $('.duallistbox').bootstrapDualListbox()
-
-          //Colorpicker
-          $('.my-colorpicker1').colorpicker()
-          //color picker with addon
-          $('.my-colorpicker2').colorpicker()
-
-          $('.my-colorpicker2').on('colorpickerChange', function (event) {
-            $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
-          })
-
-          $("input[data-bootstrap-switch]").each(function () {
-            $(this).bootstrapSwitch('state', $(this).prop('checked'));
-          })
-
         })
       </script>
 </body>
