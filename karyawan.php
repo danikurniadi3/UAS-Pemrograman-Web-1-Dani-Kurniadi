@@ -18,7 +18,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Data Karyawan</h1>
-            <button type="button" class="btn btn-block btn-outline-success" style="width: 120px; margin-top:13px;">Tambah Data</button>
+            <button type="button" onClick="window.location.href='add_karyawan.php';" class="btn btn-block btn-outline-success" style="width: 120px; margin-top:13px;">Tambah Data</button>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -57,7 +57,8 @@
                     <td><?php echo $data['posisi']?></td>
                     <td><?php echo $data['telepon']?></td>
                     <td><?php echo $data['email']?></td>
-                    <td><a href="action/delete_karyawan.php?nik=<?php echo $data['nik']; ?>">HAPUS</a></td>
+                    <td><a href="edit_karyawan.php?nik=<?php echo $data['nik']; ?>">UPDATE</a>
+                      <a href="action/delete_karyawan.php?nik=<?php echo $data['nik']; ?>">HAPUS</a></td>
                     
                   </tr>
                   <?php } ?>
