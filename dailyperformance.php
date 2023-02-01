@@ -18,7 +18,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Data Daily Performance</h1>
-            <button type="button" class="btn btn-block btn-outline-success" style="width: 120px; margin-top:13px;">Tambah Data</button>
+            <button type="button" class="btn btn-block btn-outline-success"  onClick="window.location.href='add_dailyperformance.php';" style="width: 120px; margin-top:13px;">Tambah Data</button>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -55,7 +55,7 @@
                     <td><?php echo $data['day']?></td>
                     <td><?php echo $data['worktime']?></td>
                     <td><?php echo $data['overtime']?></td>
-                    <td><a href="action/delete_karyawan.php?nik=<?php echo $data['nik']; ?>">HAPUS</a></td>
+                    <td><a href="edit_dailyperformance.php?id=<?php echo $data['id']; ?>">EDIT</a> <a href="action/delete_dailyperformance.php?id=<?php echo $data['id']; ?>">HAPUS</a></td>
                     
                   </tr>
                   <?php } ?>
@@ -69,7 +69,6 @@
                     <th>Lembur</th>
                     <th>aksi</th>
                   </tr>
-                
                   </tfoot>
                 </table>
               </div>
